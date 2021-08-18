@@ -4,7 +4,7 @@ var currenttime = new Date();
 var thisclass = 0;
 var nextbreak = 0;
 var thisdayset = new Date();
-var thisday = thisdayset.getDay();
+var thisday = thisdayset.getUTCDay();
 
 
 var c01 = new Date();
@@ -45,7 +45,7 @@ var realfloor
 
 
 function checkclass(){
-    thisday = thisdayset.getDay()
+    thisday = thisdayset.getUTCDay()
     currenttime = new Date();
 
     if(thisday == 6 || thisday == 0){
